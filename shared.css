@@ -11,7 +11,7 @@ body {
     width: 100%;
     left: 0;
     top: 0;
-    cursor: pointer;
+    cursor:help;
     font-size: 14px;
   }
   
@@ -27,6 +27,7 @@ body {
   .dropdown {
     position: fixed;
     display: inline-block;
+    padding: 10px 20px;
     z-index: 5;
   }
   
@@ -60,6 +61,7 @@ body {
 
   .main {
     display: block;
+    cursor: pointer;
   }
 
   h1, h2 {
@@ -72,9 +74,57 @@ body {
 
   .container {
     position: relative;
+  } 
+
+  .caption-link {
+    color: white;
+    overflow: hidden;
+    width: 100%;
+    right: 0;
+    bottom: 0;
+    cursor:help;
+    font-size: 22px;
+  }
+  
+  .caption a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .caption a:hover {
+    color: white;
   }
 
-  .overlay {
+  .caption {
+    position: absolute;
+    color: #f2f2f2;
+    font-size: 14px;
+    text-align:right;
+    padding: 10px 20px;
+    width: 90%;
+    max-width: 500px;
+    bottom: 0;
+    right: 0;
+    transition: .5s ease;
+  }
+  
+  .caption-content {
+    color: white;
+    display: none;
+    overflow: auto;
+    max-width: 900px;
+  }
+  
+  .caption-content a {
+    color:orchid;
+    text-decoration: none;
+  }
+
+  .caption-show {
+    display: block;
+  }
+
+  /* .overlay {
     position: absolute;
     color: #f2f2f2;
     font-size: 14px;
@@ -90,7 +140,7 @@ body {
   
   .container:hover .overlay {
     opacity: 1;
-  }
+  } */
 
   /* The Modal (background) */
 .modal {
@@ -135,6 +185,7 @@ body {
 /* The Close Button */
 .close {
   position: absolute;
+  padding: 0px 20px;
   top: 0;
   right: 0;
   color: #f1f1f1;
@@ -159,10 +210,6 @@ body {
   display: block;
   height: auto;
 } 
-
-.cursor {
-  cursor: pointer;
-}
 
 /* Next & previous buttons */
 .prev,
