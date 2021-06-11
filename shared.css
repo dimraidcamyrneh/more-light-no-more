@@ -117,6 +117,7 @@ body {
   top: 50%;
   left: 50%; 
   transform: translate(-50%, -50%);
+  z-index: 4;
 }
 
 /* Caption of Modal Image 
@@ -134,8 +135,8 @@ body {
 /* The Close Button */
 .close {
   position: absolute;
-  bottom: 0;
-  right: 11px;
+  top: 0;
+  right: 0;
   color: #f1f1f1;
   font-size: 35px;
   transition: 0.3s;
