@@ -27,7 +27,7 @@ body {
   .dropdown {
     position: fixed;
     display: inline-block;
-    padding: 10px 20px;
+    padding: 10px 5px;
     z-index: 5;
   }
   
@@ -70,6 +70,16 @@ body {
   
   p {
     font-size: 14px;
+  }
+
+  @media screen and (max-width: 700px) {
+    h1, h2 {
+      font-size: 10px;
+    }
+    
+    p {
+      font-size: 10px;
+    }
   }
 
   .container {
@@ -185,7 +195,7 @@ body {
 /* The Close Button */
 .close {
   position: absolute;
-  padding: 0px 20px;
+  padding: 0px 5px;
   top: 0;
   right: 0;
   color: #f1f1f1;
