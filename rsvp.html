@@ -11,21 +11,57 @@
     <link rel="stylesheet" href="shared.css">
 </head>
 <body>
-    <h2>RSVP</h2>
-    <form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSd1wWVplTzDe_nBI_U81Wr9WrGBltsmQuCtzJRwp9m2EyZqzg/formResponse" target="hidden_iframe" onsubmit="submitted=true;">
-        Name:<br>
-        <input type="text" name="entry.31187829" id="entry.31187829"><br>
-        E-mail:<br>
-        <input type="text" name="entry.1860002535" id="entry.1860002535"><br>
-        <input type="submit" value="Submit">
-    </form>
-    <script src="assets/js/jquery.min.js"></script>
-    <script type="text/javascript">var submitted=false;</script>
-    <script type="text/javascript">$('#gform').on('submit', function(e) {
-        $('#gform').prepend('Your submission has been processed...');
-        });
-    </script>
-    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
+    <center>
+        <h1 style="margin-top: 24px;">Henry MacDiarmid</h1>
+        <p><i>Élan Vital</i><br>
+        More Light No More<br><br>
+        
+        Open to view in person:<br>
+        Tuesday July 6, 2021<br>
+        6 - 8PM</p>
+    <h2><i><u>RSVP</u></i> For Location<br></h2>
+    <form id="my-form"
+  action="https://formspree.io/f/mrgrlazr"
+  method="POST">
+  <p>
+  <label>
+    Name:<br>
+    <input type="text" name="name" required>
+  </label><br><br>
+  <label>
+    Email:<br>
+    <input type="email" name="email" required>
+  </label><br><br>
+  <button id="my-form-button">Submit</button>
+  <p id="my-form-status"></p>
+</p>
+</form>
+
+<img src="img/Élan Vital - RSVP.jpg" style=" width: 600px; max-width:90%;">
+<!-- Place this script at the end of the body tag -->
+
+<script>
+    var form = document.getElementById("my-form");
+    
+    async function handleSubmit(event) {
+      event.preventDefault();
+      var status = document.getElementById("my-form-status");
+      var data = new FormData(event.target);
+      fetch(event.target.action, {
+        method: form.method,
+        body: data,
+        headers: {
+            'Accept': 'application/json'
+        }
+      }).then(response => {
+        status.innerHTML = "Form Submitted";
+        form.reset()
+      }).catch(error => {
+        status.innerHTML = "There was a problem submitting your form."
+      });
+    }
+    form.addEventListener("submit", handleSubmit)
+</script>
+</center>
 </body>
-<script src="shared.js"></script>
 </html>
