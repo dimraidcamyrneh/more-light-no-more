@@ -23,6 +23,7 @@ body {
   
   .topnav a:hover {
     color: white;
+    text-decoration: none;
   }
 
   .dropdown {
