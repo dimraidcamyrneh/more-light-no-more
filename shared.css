@@ -5,13 +5,20 @@ body {
     margin: 0;
   }
   
+  .menu-header {
+    position: fixed;
+    display: flex;
+    padding: 10px 5px;
+    z-index: 5;
+    color: white;
+  }
+
   .topnav {
     color: white;
     overflow: hidden;
     width: 100%;
     left: 0;
     top: 0;
-    cursor:help;
     font-size: 14px;
     text-decoration: none;
   }
@@ -31,6 +38,7 @@ body {
     display: inline-block;
     padding: 10px 5px;
     z-index: 5;
+    color: white;
   }
   
   .dropdown-content {
@@ -114,7 +122,7 @@ body {
     text-align:right;
     padding: 10px 5px;
     width: 90%;
-    max-width: 500px;
+    max-width: 600px;
     bottom: 0;
     right: 0;
     transition: .5s ease;
@@ -173,7 +181,7 @@ body {
   margin: auto;
   display: block;
   position: absolute;
-  width: 550px;
+  width: 580px;
   max-width: 100%;
   height: auto;
   top: 50%;
@@ -218,18 +226,19 @@ body {
 }
 
 .mySlides img {
-  width: 100%;
   display: block;
   height: auto;
+  width: 100%;
 } 
 
 /* Next & previous buttons */
 .prev,
 .next {
   cursor: pointer;
-  position: absolute;
+  position:absolute;
+  z-index: 5;
   top: 50%;
-  width: auto;
+  max-width: 100%;
   padding: 16px;
   margin-top: -50px;
   color: white;

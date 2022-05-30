@@ -16,11 +16,7 @@ function myDrop() {
     }
   }
 
-  function myCap() {
-    document.getElementById("myCaption").classList.toggle("caption-show");
-  }
-  
-  // Close the dropdown if the user clicks outside of it
+    // Close the dropdown if the user clicks outside of it
  /*  window.onclick = function(event) {
     if (!event.target.matches('.caption-link')) {
       var captions = document.getElementsByClassName("caption-content");
@@ -34,6 +30,9 @@ function myDrop() {
     }
   } */
 
+  function myCap() {
+    document.getElementById("myCaption").classList.toggle("caption-show");
+  }
   function myCap1() {
     document.getElementById("myCaption1").classList.toggle("caption-show");
   }
