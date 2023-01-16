@@ -90,6 +90,10 @@ body {
     p {
       font-size: 9px;
     }
+      
+    #mobile_hero {
+      content: url(https://morelightnomore.com/img/PLAY%201_mobile.jpg) !important
+    }
   }
 
   .container {
