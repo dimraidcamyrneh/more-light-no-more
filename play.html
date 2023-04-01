@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More Light No More</title>
+    <link rel="shortcut icon" href="img/PLAY - Curtain.jpg">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="shared.css">
+</head>
+<body>
+  <!-- Top Navigation Menu -->
+<div class="menu-header">
+  <div class="dropdown">
+    <a href="placenoplace.html" class="topnav">Place No Place</a> | 
+    <a href="play.html" class="topnav"><u><i>PLAY</i></u></a> | 
+    <a href="sternnumb.html" class="topnav">Stern Numb</a> | 
+    <a href="elanvital.html" class="topnav">Élan Vital</a>
+    <p>
+      <a onclick="myDrop()" class="topnav" style="cursor:help;">Statement</a>
+    </p>
+    <div id="myDropdown" class="dropdown-content" style="color: black;">
+      <h1>Henry MacDiarmid</h1>
+      <p>
+        <i><strong>PLAY</strong></i><br>
+        Play script and image printed on torn out empty pages from the end of a classic novel.<br> 
+        Then bound back into the book, scanned to digital file, and printed for billboard.
+      </p>
+      <p>
+        Reno, NV<br>
+        <a href="https://goo.gl/maps/Zin4SxSrqcshp4Md9" target="_blank">39.525589, -119.825875</a><br>
+        January 2023
+      </p>
+      <p>
+        <a href="https://www.hollandreno.org/2023/01/billboard-jan23/" target="_blank">The Holland Project’s Billboard Gallery</a> 
+        showcases the work of exceptional emerging and established regional artists on billboards throughout Reno’s surface streets. 
+        Three new artists are installed every four weeks.
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="main">
+  <div class="container">
+    <img id="mobile_hero" src="img/PLAY 1.jpg" loading="lazy" onclick="openModal();currentSlide(1)">
+    <div class="caption">
+      <a onclick="myCap()" class="caption-link">caption</a>
+      <div id="myCaption" class="caption-content" style="color: black;"><i><strong>PLAY</strong></i><br>
+        Play script and image printed on torn out empty pages from the end of a classic novel.
+        Then bound back into the book, scanned to digital file, and printed for billboard.<br><br>
+        Reno, NV<br>
+        <a href="https://goo.gl/maps/Zin4SxSrqcshp4Md9" target="_blank" style="color:darkmagenta;">39.525589, -119.825875</a><br>
+        January 2023
+      </div>
+    </div>
+  </div>
+  <img src="img/PLAY 2.jpg" loading="lazy" onclick="openModal();currentSlide(2)">
+  <img src="img/PLAY 3.jpg" loading="lazy" onclick="openModal();currentSlide(3)">
+  <img src="img/PLAY 4.jpg" loading="lazy" onclick="openModal();currentSlide(4)">
+  
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+    <div class="mySlides">
+      <img src="img/PLAY 1.jpg">
+      <div class="slidecaption"><i><strong>PLAY</strong></i><br>
+        Play script and image printed on torn out empty pages from the end of a classic novel.<br> 
+        Then bound back into the book, scanned to digital file, and printed for billboard.<br><br>
+        Reno, NV<br>
+        <a href="https://goo.gl/maps/Zin4SxSrqcshp4Md9" target="_blank" style="color:orchid;">39.525589, -119.825875</a><br>
+        January 2023
+      </div>
+    </div>
+    <div class="mySlides">
+      <img src="img/PLAY 2.jpg">
+    </div>
+    <div class="mySlides">
+      <img src="img/PLAY 3.jpg">
+    </div>
+    <div class="mySlides">
+      <img src="img/PLAY 4.jpg">
+    </div>
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+
+<script src="shared.js"></script>
+
+</body>
+</html>
