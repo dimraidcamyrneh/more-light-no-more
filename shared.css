@@ -146,6 +146,11 @@ body {
   }
 
   @media screen and (max-width: 700px) {
+      
+    .dropdown {
+      width: 250px;
+    }
+      
     h1, h2 {
       font-size: 11px;
     }
