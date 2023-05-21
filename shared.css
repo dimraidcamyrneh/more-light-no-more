@@ -43,13 +43,14 @@ body {
   
   .dropdown-content {
     color: white;
+    background-color:black;
     display: none;
     overflow: auto;
     max-width: 900px;
   }
   
   .dropdown-content a {
-    color: white;
+    color:orchid;
     background-color:black;
     text-decoration: none;
   }
@@ -125,6 +126,7 @@ body {
     display: none;
     overflow: auto;
     max-width: 900px;
+    background-color:black;
   }
   
   .caption-content a {
